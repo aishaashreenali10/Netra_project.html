@@ -14,16 +14,32 @@ body{
     color: #edf4ff;
     font-family: Arial, sans-serif;
     min-height: 100vh;
-}             
+}   
+button, input, select {
+    font-family: inherit;
+}  
+button {
+    background: #287ee8;
+    border:0;
+    color: white;
+    padding: 12px, 20px;
+    cursor:pointer;
+    font-weight:bold;
+    border-radius: 8px;
+}  
+button:hover {
+    background: #1765c3;
+}      
 .topbar{
     display:flex;
     align-items:center;
     justify-content:space-between;
     background-color: #111f34;
     gap: 20px;
-    padding:20px;
+    padding:15px 4%;
     min-height: 82px;
     border-bottom: 1px solid #2a3d59;
+    background: #111f34;
 }
 .brand{
     display:flex;
@@ -46,6 +62,26 @@ body{
     font-size:9px;
     color: #91a8c5;
 }
+nav{
+   display: flex;
+    gap: 20px;
+}
+nav a{
+    color:#aebed3;
+    text-decoration: none;
+    font-size:13px;
+}
+nav a:hover {
+    color: #54a5ff;
+}
+ 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #39d6a0;
+    font-size: 11px;
+}
 .online-dot {
     width: 9px;
     height: 9px;
@@ -56,4 +92,17 @@ body{
     color: white;
     margin-left:10px;
     font-family: monospace;
+}
+#dispatch-open{
+    background-color: #287ee8;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+
+}
+#dispatch-open:hover {
+    background-color: #1765c3;
 }
